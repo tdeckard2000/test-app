@@ -1,0 +1,7 @@
+<p style="font-weight: bold; font-family: sans-serif;">Learning @Output</p>
+<p>Value stored on parent: {{theValue}}</p>
+
+<div style="padding-top: 15px;">
+  <app-lower (buttonClickEvent)="onChangeValue($event)" [textFromParent]="parentTextValue"></app-lower>
+  <input style="display: block;" [(ngModel)]="parentTextValue" type="text">
+</div>

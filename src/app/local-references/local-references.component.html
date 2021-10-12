@@ -1,0 +1,7 @@
+<p>Learning #LocalReferences</p>
+<form action="">
+  <input style="display: block;" type="text" #textField placeholder="old">
+  <button type="submit" (click)="onClick(textField.value)" >Apply</button>
+  <p>Value is:</p>
+  <p>{{stringValue}}</p>
+</form>

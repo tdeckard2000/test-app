@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-app';
+  header = "Test";
+
+  headerNameChanged(newHeaderName:string){
+    this.header = newHeaderName;
+  }
+
 }
