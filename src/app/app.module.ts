@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { LowerComponent } from './lower/lower.component';
 import { UpperComponent } from './upper/upper.component';
 import { LocalReferencesComponent } from './local-references/local-references.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LocalReferencesComponent } from './local-references/local-references.co
     ChildComponentComponent,
     LowerComponent,
     UpperComponent,
-    LocalReferencesComponent
+    LocalReferencesComponent,
+    ViewchildComponent
   ],
   imports: [
     BrowserModule,
