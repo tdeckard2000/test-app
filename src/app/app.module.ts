@@ -9,6 +9,7 @@ import { LowerComponent } from './lower/lower.component';
 import { UpperComponent } from './upper/upper.component';
 import { LocalReferencesComponent } from './local-references/local-references.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { MakeBoldBlue } from './makeBoldBlue/make-bold-blue.directive';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
     LowerComponent,
     UpperComponent,
     LocalReferencesComponent,
-    ViewchildComponent
+    ViewchildComponent,
+    MakeBoldBlue
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
