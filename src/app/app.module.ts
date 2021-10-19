@@ -10,6 +10,9 @@ import { UpperComponent } from './upper/upper.component';
 import { LocalReferencesComponent } from './local-references/local-references.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { MakeBoldBlue } from './makeBoldBlue/make-bold-blue.directive';
+import { BetterBoldBlueDirective } from './betterBoldBlue/better-bold-blue.directive';
+import { HighlightOnHoverDirective } from './highlightOnHover/highlight-on-hover.directive';
+import { HostBindingBoldBlueDirective } from './hostBinding-boldBlue/host-binding-bold-blue.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { MakeBoldBlue } from './makeBoldBlue/make-bold-blue.directive';
     UpperComponent,
     LocalReferencesComponent,
     ViewchildComponent,
-    MakeBoldBlue
+    MakeBoldBlue,
+    BetterBoldBlueDirective,
+    HighlightOnHoverDirective,
+    HostBindingBoldBlueDirective
   ],
   imports: [
     BrowserModule,
