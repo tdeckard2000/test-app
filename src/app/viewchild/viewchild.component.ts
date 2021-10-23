@@ -13,7 +13,8 @@ export class ViewchildComponent implements OnInit {
 
   displayValue: string = "";
   isChecked:boolean = true;
-  textboxTwoValue: string = "Example"
+  textboxTwoValue: string = "Example";
+  textboxThreeValue: string = "";
 
   onClick(){
     this.displayValue = this.myLocalRef.nativeElement.value;

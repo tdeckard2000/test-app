@@ -3,7 +3,7 @@
 <p style="padding: 15px, 0;" > Value: {{displayValue}} </p>
 
 <input style="display: block;" #myLocalRef type="text">
-<p [setColor]="'yellow'" appHostBindingBoldBlue>My Example Text</p>
+<p [setColor]="'blue'" appHostBindingBoldBlue style="width: fit-content;">Hover Over Me</p>
 <button (click)="onClick()" >Send -></button>
 
 <hr style="margin-top: 20px;">
@@ -21,4 +21,17 @@
 
 <div *appShowIfString="textboxTwoValue">
   <p>This div is controlled by a structural directive. It is shown if a letter is entered above, but not if only numbers or spaces are entered.</p>
+</div>
+
+<hr style="margin-top: 20px;">
+
+<label for="textbox3">Textbox #3</label>
+<input [(ngModel)]="textboxThreeValue"  style="margin-top: 20px; margin-left: 10px;" type="text" name="textbox3">
+<p>Below is an ngSwitch statement controlled by the values of the textbox above. Possible values are "cat", "dog", or "fish".</p>
+<div [ngSwitch]="textboxThreeValue">
+  <p *ngSwitchCase="'cat'"> Cats look like 🐈</p>
+  <p *ngSwitchCase="'dog'"> Dogs look like 🐕</p>
+  <p *ngSwitchCase="'fish'"> Fish look like 🐟</p>
+  <p *ngSwitchCase="'cow'" >Cows look like 🥩</p>
+  <p *ngSwitchDefault> ----- </p>
 </div>
