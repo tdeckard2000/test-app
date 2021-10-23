@@ -12,6 +12,8 @@ export class ViewchildComponent implements OnInit {
   @ViewChild('myLocalRef', {static: false}) myLocalRef!: ElementRef;
 
   displayValue: string = "";
+  isChecked:boolean = true;
+  textboxTwoValue: string = "Example"
 
   onClick(){
     this.displayValue = this.myLocalRef.nativeElement.value;

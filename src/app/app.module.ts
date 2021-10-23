@@ -13,6 +13,8 @@ import { MakeBoldBlue } from './makeBoldBlue/make-bold-blue.directive';
 import { BetterBoldBlueDirective } from './betterBoldBlue/better-bold-blue.directive';
 import { HighlightOnHoverDirective } from './highlightOnHover/highlight-on-hover.directive';
 import { HostBindingBoldBlueDirective } from './hostBinding-boldBlue/host-binding-bold-blue.directive';
+import { StructuralDirectiveDirective } from './structural-directive/structural-directive.directive';
+import { ShowIfStringDirective } from './show-if-string/show-if-string.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HostBindingBoldBlueDirective } from './hostBinding-boldBlue/host-bindin
     MakeBoldBlue,
     BetterBoldBlueDirective,
     HighlightOnHoverDirective,
-    HostBindingBoldBlueDirective
+    HostBindingBoldBlueDirective,
+    StructuralDirectiveDirective,
+    ShowIfStringDirective
   ],
   imports: [
     BrowserModule,

@@ -5,3 +5,20 @@
 <input style="display: block;" #myLocalRef type="text">
 <p [setColor]="'yellow'" appHostBindingBoldBlue>My Example Text</p>
 <button (click)="onClick()" >Send -></button>
+
+<hr style="margin-top: 20px;">
+
+<input [(ngModel)]="isChecked" style="display: block; margin-top: 20px;" type="checkbox" name="Structural Directive Show/Hide">
+
+<div *appStructuralDirective="isChecked">
+  <p>This div is controlled by a custom structural directive. The checkbox above controls it!</p>
+</div>
+
+<hr style="margin-top: 20px;">
+
+<label for="textboxTwo">Textbox #2</label>
+<input [(ngModel)]="textboxTwoValue"  style="margin-top: 20px; margin-left: 10px;" type="text" name="textboxTwo" id="">
+
+<div *appShowIfString="textboxTwoValue">
+  <p>This div is controlled by a structural directive. It is shown if a letter is entered above, but not if only numbers or spaces are entered.</p>
+</div>
