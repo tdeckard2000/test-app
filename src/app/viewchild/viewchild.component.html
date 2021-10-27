@@ -35,3 +35,11 @@
   <p *ngSwitchCase="'cow'" >Cows look like 🥩</p>
   <p *ngSwitchDefault> ----- </p>
 </div>
+
+<hr style="margin-top: 20px;">
+
+<div>
+<label for="textbox3">Textbox #3</label>
+<p>A dropdown list created with a custom directive. The directive accepts an array of items.</p>
+<button appDropdown [dropdownOptions]='["cat","car", "book", "boat", "fish"]' style="height: 30px; width: 110px; line-height: 25px;">Show List ▼</button>
+</div>

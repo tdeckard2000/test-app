@@ -15,6 +15,7 @@ import { HighlightOnHoverDirective } from './highlightOnHover/highlight-on-hover
 import { HostBindingBoldBlueDirective } from './hostBinding-boldBlue/host-binding-bold-blue.directive';
 import { StructuralDirectiveDirective } from './structural-directive/structural-directive.directive';
 import { ShowIfStringDirective } from './show-if-string/show-if-string.directive';
+import { DropdownDirective } from './dropdown/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ShowIfStringDirective } from './show-if-string/show-if-string.directive
     HighlightOnHoverDirective,
     HostBindingBoldBlueDirective,
     StructuralDirectiveDirective,
-    ShowIfStringDirective
+    ShowIfStringDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
