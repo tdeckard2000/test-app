@@ -1,0 +1,5 @@
+<p style="font-family: sans-serif; margin-top: 20px;">Component #2</p>
+
+<div (click)="deleteUser(index)" style="border: solid 1px black; text-align: center; margin: -1px auto; border-radius: 5px; width: 200px;" *ngFor="let item of itemList; let index = index">
+  <p>{{item.name}} / {{item.status}}</p>
+</div>

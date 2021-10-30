@@ -1,0 +1,26 @@
+<hr style="margin-top: 20px;">
+
+<h4 style="font-family: sans-serif;">Learning Custom Services</h4>
+<p style="font-family: sans-serif; font-size: .9rem;">Data is shared between two components through a custom data service. Enter a name, then select an option. Click an item to delete it.</p>
+
+<form action="">
+<p style="font-family: sans-serif;">Component #1</p>
+<label style="font-family: sans-serif; font-size: .8rem;" for="name">Employee Name</label>
+<input [(ngModel)]="employeeName" style="display: block;" type="text" name="name">
+<div style="margin: 10px 0px 0px 10px; font-size: .8rem; font-family: sans-serif;">
+  <div>
+    <input [(ngModel)]="statusSelection" type="radio" name="status" value="active" id="active">
+    <label for="active">Active</label>
+  </div>
+  <div>
+    <input [(ngModel)]="statusSelection" type="radio" name="status" value="inactive" id="inactive">
+    <label for="inactive">Inactive</label>
+  </div>
+  <div>
+    <input [(ngModel)]="statusSelection" type="radio" name="status" value="hyperactive" id="hyperactive">
+    <label for="hyperactive">hyperactive</label>
+  </div>
+</div>
+
+<button type="submit" (click)="onSubmit()" style="margin-top: 20px; height: 30px; width: 100px;">Submit ></button>
+</form>

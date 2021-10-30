@@ -16,6 +16,8 @@ import { HostBindingBoldBlueDirective } from './hostBinding-boldBlue/host-bindin
 import { StructuralDirectiveDirective } from './structural-directive/structural-directive.directive';
 import { ShowIfStringDirective } from './show-if-string/show-if-string.directive';
 import { DropdownDirective } from './dropdown/dropdown.directive';
+import { AddItemComponent } from './add-item/add-item.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { DropdownDirective } from './dropdown/dropdown.directive';
     HostBindingBoldBlueDirective,
     StructuralDirectiveDirective,
     ShowIfStringDirective,
-    DropdownDirective
+    DropdownDirective,
+    AddItemComponent,
+    ItemListComponent
   ],
   imports: [
     BrowserModule,
