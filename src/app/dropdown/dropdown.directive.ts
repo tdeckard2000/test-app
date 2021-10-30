@@ -15,7 +15,7 @@ export class DropdownDirective implements AfterViewInit {
     }else{
       this.dropdownOpen = false;
       this.hideDropdown();
-    }
+    };
   };
 
   constructor( private elementRef:ElementRef, private renderer:Renderer2) { }

@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ConsoleLogService } from '../services/console-log.service';
 
 @Component({
   selector: 'app-viewchild',
@@ -7,7 +8,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class ViewchildComponent implements OnInit {
 
-  constructor() { }
+  constructor( private logService: ConsoleLogService) { }
 
   @ViewChild('myLocalRef', {static: false}) myLocalRef!: ElementRef;
 
@@ -21,6 +22,7 @@ export class ViewchildComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.logService.logIt("this is my log info.")
   }
 
 }
